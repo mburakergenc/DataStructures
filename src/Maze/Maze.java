@@ -15,7 +15,6 @@ import java.io.*;
 public class Maze
 {
     private static final int TRIED = 2;
-    private static final int PATH = 3;
 
     private int numberRows, numberColumns;
     private int[][] grid;
@@ -70,16 +69,6 @@ public class Maze
         return grid[0].length;
     }
     
-    /**
-     * Marks a given position in the maze as part of the PATH
-     *
-     * @param row the index of the row to mark as part of the PATH
-     * @param col the index of the column to mark as part of the PATH 
-     */
-    public void markPath(int row, int col)
-    {
-        grid[row][col] = PATH;
-    }
 
     /**
      * Determines if a specific location is valid. A valid location

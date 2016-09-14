@@ -1,4 +1,4 @@
-package jsjf;
+package datastructures;
 
 /**
  * Represents a node in a linked list.
