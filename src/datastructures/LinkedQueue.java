@@ -9,7 +9,7 @@ package datastructures;
 
 import datastructures.exceptions.*;
 
-public class LinkedQueue<T> implements QueueADT<T>{
+public class LinkedQueue<T> implements QueueADT<T> {
 
     private int count;
     private LinearNode<T> front, rear;
@@ -56,20 +56,20 @@ public class LinkedQueue<T> implements QueueADT<T>{
             rear = null;
         }
         return result;
-    } 
-    
+    }
+
     public boolean isEmpty() {
         return count == 0;
     }
-    
-    public T first(){
+
+    public T first() {
         if (count == 0) {
             throw new EmptyCollectionException("Cannot peek into empty queue");
-        }  
+        }
         return front.getElement();
     }
-    
-    public int size(){
+
+    public int size() {
         return count;
     }
 }
